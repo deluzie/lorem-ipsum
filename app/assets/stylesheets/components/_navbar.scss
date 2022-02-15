@@ -1,6 +1,14 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: white;
+  margin: 0px 80px 0px 80px;
+}
+
+.blur {
+  :hover {
+  filter:blur(6px);
+  transition: 0.4s;
+  color: black;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -12,4 +20,8 @@
   font-size: 48px;
   text-decoration: none;
   color: black;
+}
+
+.red {
+  color: $red !important;
 }

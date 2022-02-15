@@ -1,8 +1,10 @@
-<div>
-  <div>
-    <%= link_to "about", "/about", class: "navbar-font" %>
+<div class="navbar">
+  <div class="blur">
+    <%= image_tag "link.png" %>
+    <%= link_to " about", "/about", class: "navbar-font" %>
   </div>
-  <p class="textblock container-wide">
-    <%= @text.content %>
-  </p>
+  <p class="navbar-font red"> lorem ipsum</p>
 </div>
+<p class="textblock container-wide">
+  <%= @text.content %>
+</p>
