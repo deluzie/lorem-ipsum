@@ -12,6 +12,7 @@ class TextsController < ApplicationController
 
     # @content.id = content_ids.sample
     # @content = Content.find(@content_id)
+      @home_page = true
     	@text = Text.find(Text.pluck(:id).sample)
 	end
 end
