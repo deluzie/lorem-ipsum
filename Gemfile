@@ -32,6 +32,8 @@ gem 'devise'
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
+# gem 'clipboard-rails'
+gem 'clipboard', '~> 1.3', '>= 1.3.6'
 gem 'simple_form'
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'

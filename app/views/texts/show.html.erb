@@ -10,4 +10,13 @@
 <p class="textblock container-wide" id="lorem">
   <%= @text.content %>
 </p>
-<button class="copy">Copy text</button>
+
+<div class="navbar">
+  <div class="blur navbar-font icon-div">
+    <button>
+      <p>Copy text</p>
+      <% Clipboard.copy(@text.content) %>
+    </button>
+  </div>
+  <p class="navbar-font">reload</p>
+</div>
