@@ -4,13 +4,14 @@
   a {
     text-decoration: none;
   }
+  button {
+    text-decoration: none;
+  }
 }
 
 .blur {
   :hover {
-  filter:blur(6px);
-  transition: 0.4s;
-  color: black;
+  text-decoration: underline;
   }
 }
 
