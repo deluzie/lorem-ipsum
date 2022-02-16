@@ -23,3 +23,6 @@ import "bootstrap"
 //   console.log(clipboard);
 	
 // });
+// function changebackground(){
+// 	document.body.style.backgroundColor = '$red';
+// }

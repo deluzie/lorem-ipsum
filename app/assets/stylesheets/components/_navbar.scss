@@ -7,11 +7,12 @@
   button {
     text-decoration: none;
   }
+  padding-bottom: 36px;
 }
 
 .blur {
   :hover {
-  text-decoration: underline;
+  text-decoration: underline !important;
   }
 }
 

@@ -5,7 +5,7 @@
         about</p>
       </div>
     <% end %> 
-  <p class="navbar-font red"> lorem ipsum</p>
+  <p class="navbar-font red"> a new lorem ipsum</p>
 </div>
 <div class="content">
   <p class="textblock container-wide">
@@ -19,5 +19,9 @@
       <% Clipboard.copy(@text.content) %>
     </div>
   </button>
-  <p class="navbar-font"><%= image_tag "reload.svg" %>&nbsp;reload</p>
+  <div class="blur navbar-font icon-div">
+    <%= button_to @text, :method => :get do %>
+    <p><%= image_tag "reload.svg" %>&nbsp;reload</p>
+    <% end %> 
+  </div>
 </div>
