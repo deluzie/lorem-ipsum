@@ -1,6 +1,13 @@
 .navbar {
   justify-content: space-between;
-  margin: 0px 80px 0px 80px;
+  margin: 0px 80px 0px 45px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.about {
+  margin-left: 45px !important;
 }
 
 .blur {
@@ -20,6 +27,9 @@
   font-size: 48px;
   text-decoration: none;
   color: black;
+  a {
+    text-decoration: none;
+  }
 }
 
 .red {
