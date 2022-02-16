@@ -7,11 +7,12 @@
     <% end %> 
   <p class="navbar-font red"> lorem ipsum</p>
 </div>
-<p class="textblock container-wide" id="lorem">
-  <%= @text.content %>
-</p>
+<div class="content">
+  <p class="textblock container-wide">
+  <%= @text.content %></p>
+</div>
 
-<div class="navbar">
+<div class="navbar footer">
   <button>
     <div class="blur navbar-font icon-div">
       <p><%= image_tag "copy.svg" %>&nbsp;click to copy</p>
