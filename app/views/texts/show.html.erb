@@ -1,32 +1,34 @@
-<div class="navbar">
-    <%= link_to "/about" do %>
-      <div class="blur navbar-font red icon-div">
-        <p><%= image_tag "link_red.svg" %>
-        about</p>
-      </div>
-    <% end %> 
-  <p class="navbar-font red"> a new lorem ipsum</p>
-</div>
-
-<div class="content">
-  <p class="textblock red container-wide" id="lorem">
-   <%= @text.content %>
- </p>
-</div>
-
- <div class="navbar footer red">
-   <div class="blur navbar-font icon-div">
-     <button>
-       <p class="red"><%= image_tag "copy_red.svg" %>&nbsp;click to copy</p>
-       <% Clipboard.copy(@text.content) %>
-     </button>
-   </div>
-   <div class="blur navbar-font icon-div">
-    <%= button_to @text, :method => :get do %>
-    <p class="red"><%= image_tag "reload_red.svg" %>&nbsp;reload</p>
-    <% end %> 
+<body>
+  <div class="navbar">
+      <%= link_to "/about" do %>
+        <div class="blur navbar-font red icon-div">
+          <p><%= image_tag "link_red.svg" %>
+          about</p>
+        </div>
+      <% end %> 
+    <p class="navbar-font red"> a new lorem ipsum</p>
   </div>
- </div>
+
+  <div class="content">
+    <p class="textblock red container-wide" id="lorem">
+     <%= @text.content %>
+   </p>
+  </div>
+
+   <div class="navbar footer red">
+     <div class="blur navbar-font icon-div">
+       <button>
+         <p class="red"><%= image_tag "copy_red.svg" %>&nbsp;click to copy</p>
+         <% Clipboard.copy(@text.content) %>
+       </button>
+     </div>
+     <div class="blur navbar-font icon-div">
+      <%= button_to @text, :method => :get do %>
+      <p class="red"><%= image_tag "reload_red.svg" %>&nbsp;reload</p>
+      <% end %> 
+    </div>
+   </div>
+ </body>
 
  <!-- <div class="navbar footer">
   <div class="input-group-append">

@@ -12,7 +12,6 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body class="<%= @home_page ? 'background-green' : ''%>">
-    <%= yield %>
-  </body>
+  <%= yield %>
+  
 </html>
