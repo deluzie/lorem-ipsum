@@ -26,3 +26,11 @@ import "bootstrap"
 // function changebackground(){
 // 	document.body.style.backgroundColor = '$red';
 // }
+
+var colors = ['#E5D3FF', '#FFF5CE', '#9750FF', '#FFCDB0', '#FFD3FE', '#D3D8FF', '#93AAFF'];
+
+var changeBackground = function() {
+    document.body.style.background = colors[Math.floor(Math.random()*colors.length)];
+};
+
+changeBackground();
