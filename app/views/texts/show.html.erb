@@ -8,10 +8,48 @@
   <p class="navbar-font red"> a new lorem ipsum</p>
 </div>
 
-<div class="input-group content" data-controller="clipboard" data-clipboard-feedback-text-value="Copied!">
-  <p class="textblock container-wide" data-clipboard-target="input" type="text" value="https://www.lewagon.com/" readonly>
-  <%= @text.content %></p>
+<div class="content">
+  <p class="textblock container-wide" id="lorem">
+   <%= @text.content %>
+ </p>
 </div>
+
+ <div class="navbar footer">
+   <div class="blur navbar-font icon-div">
+     <button>
+       <p><%= image_tag "copy.svg" %>&nbsp;click to copy</p>
+       <% Clipboard.copy(@text.content) %>
+     </button>
+   </div>
+   <div class="blur navbar-font icon-div">
+    <%= button_to @text, :method => :get do %>
+    <p><%= image_tag "reload.svg" %>&nbsp;reload</p>
+    <% end %> 
+  </div>
+ </div>
+
+ <!-- <div class="navbar footer">
+  <div class="input-group-append">
+    <button id="copy-button" class="blur navbar-font icon-div" data-action="click->clipboard#copy">
+      <p><%= image_tag "copy.svg" %>&nbsp;click to copy</p>
+    </button>
+  </div>
+  <div class="blur navbar-font icon-div">
+    <%= button_to @text, :method => :get do %>
+    <p><%= image_tag "reload.svg" %>&nbsp;reload</p>
+    <% end %> 
+  </div>
+</div>
+ -->
+
+
+
+<!-- <div class="input-group" data-controller="clipboard" data-clipboard-feedback-text-value="Copied!">
+   <div class="content">
+     <p class="textblock container-wide" data-clipboard-target="input" type="text" value="https://www.lewagon.com/" readonly>
+     <%= @text.content %></p>
+   </div>
+ </div>
 
 <div class="navbar footer">
   <div class="input-group-append">
@@ -24,4 +62,4 @@
     <p><%= image_tag "reload.svg" %>&nbsp;reload</p>
     <% end %> 
   </div>
-</div>
+</div> -->
