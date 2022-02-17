@@ -8,11 +8,9 @@
   <p class="navbar-font red"> a new lorem ipsum</p>
 </div>
 
-<div class="input-group" data-controller="clipboard" data-clipboard-feedback-text-value="Copied!">
-  <div class="content">
-    <p class="textblock container-wide" data-clipboard-target="input" type="text" value="https://www.lewagon.com/" readonly>
-    <%= @text.content %></p>
-  </div>
+<div class="input-group content" data-controller="clipboard" data-clipboard-feedback-text-value="Copied!">
+  <p class="textblock container-wide" data-clipboard-target="input" type="text" value="https://www.lewagon.com/" readonly>
+  <%= @text.content %></p>
 </div>
 
 <div class="navbar footer">
