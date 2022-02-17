@@ -6,3 +6,10 @@
  	line-height: 50px;
  	color: black;
 }
+
+@media only screen and (max-width: 600px) {
+	.textblock {
+ 	font-size: 22px;
+ 	line-height: 30px;
+	}
+}
