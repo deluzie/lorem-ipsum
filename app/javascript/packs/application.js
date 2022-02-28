@@ -27,10 +27,10 @@ import "bootstrap"
 // 	document.body.style.backgroundColor = '$red';
 // }
 
-var colors = ['#E5D3FF', '#FFF5CE', '#9750FF', '#FFCDB0', '#FFD3FE', '#D3D8FF', '#93AAFF'];
+// var colors = ['#E5D3FF', '#FFF5CE', '#9750FF', '#FFCDB0', '#FFD3FE', '#D3D8FF', '#93AAFF'];
 
-var changeColor = function() {
-    document.body.style.color = colors[Math.floor(Math.random()*colors.length)];
-};
+// var changeColor = function() {
+//     document.body.style.color = colors[Math.floor(Math.random()*colors.length)];
+// };
 
-changeColor();
+// changeColor();
