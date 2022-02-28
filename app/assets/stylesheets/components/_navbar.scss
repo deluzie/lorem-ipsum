@@ -14,7 +14,9 @@
 
 .blur {
   :hover {
-  text-decoration: underline !important;
+  filter:blur(6px);
+  transition: 0.4s;
+  text-decoration: none;
   }
 }
 
